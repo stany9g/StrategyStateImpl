@@ -24,7 +24,7 @@ namespace StrategyStateImplTests
             Color expectedColor = Color.RED;
 
             // Act
-            _light.SetState(new Stop(this));
+            _light.SetState(new Stop(_light));
 
             // Assert
             Assert.AreEqual(expectedColor, _light.GetLightColor());
@@ -37,7 +37,7 @@ namespace StrategyStateImplTests
             Color expectedColor = Color.ORANGE;
 
             // Act
-            _light.SetState(new AttentionPrepare(this));
+            _light.SetState(new Prepare(_light));
 
             // Assert
             Assert.AreEqual(expectedColor, _light.GetLightColor());
@@ -50,7 +50,7 @@ namespace StrategyStateImplTests
             Color expectedColor = Color.GREEN;
 
             // Act
-            _light.SetState(new Go(this));
+            _light.SetState(new Go(_light));
 
             // Assert
             Assert.AreEqual(expectedColor, _light.GetLightColor());
@@ -60,7 +60,7 @@ namespace StrategyStateImplTests
         public void TimeLapseColorChangeByPeriodTest()
         {
             // Arrange
-            _light.SetState(new AttentionPrepare(_light));
+            _light.SetState(new Prepare(_light));
 
             // Act
             for(int i = 0; i < (int)LightPeriod.ORANGE_LIGHT_PERIOD; i++)

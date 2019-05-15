@@ -35,7 +35,7 @@ namespace StrategyStateImpl
                 }
                 counter++;
             }
-            time++;
+            _time++;
         }
     }
     */

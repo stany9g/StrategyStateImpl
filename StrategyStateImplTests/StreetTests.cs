@@ -36,20 +36,20 @@ namespace StrategyStateImplTests
                 string actualOutput = stringWriter.ToString();
 
                 // Assert
-                Assert.AreEqual(expectedOutput1, actualOutput.Substring(actualOutput.IndexOf("0 "), actualOutput.IndexOf("0 ") + 24));
-                Assert.AreEqual(expectedOutput2, actualOutput.Substring(actualOutput.IndexOf("2 "), actualOutput.IndexOf("2 ") + 23));
-                Assert.AreEqual(expectedOutput3, actualOutput.Substring(actualOutput.IndexOf("5 "), actualOutput.IndexOf("5 ") + 26));
-                Assert.AreEqual(expectedOutput4, actualOutput.Substring(actualOutput.IndexOf("13 "), actualOutput.IndexOf("13 ") + 29));
-                Assert.AreEqual(expectedOutput5, actualOutput.Substring(actualOutput.IndexOf("14 "), actualOutput.IndexOf("14 ") + 26));
-                Assert.AreEqual(expectedOutput6, actualOutput.Substring(actualOutput.IndexOf("28 "), actualOutput.IndexOf("28 ") + 27));
+                Assert.AreEqual(expectedOutput1, actualOutput.Substring(actualOutput.IndexOf("0 "), 24));
+                Assert.AreEqual(expectedOutput2, actualOutput.Substring(actualOutput.IndexOf("2 "), 23));
+                Assert.AreEqual(expectedOutput3, actualOutput.Substring(actualOutput.IndexOf("5 "), 26));
+                Assert.AreEqual(expectedOutput4, actualOutput.Substring(actualOutput.IndexOf("13 "), 29));
+                Assert.AreEqual(expectedOutput5, actualOutput.Substring(actualOutput.IndexOf("14 "), 26));
+                Assert.AreEqual(expectedOutput6, actualOutput.Substring(actualOutput.IndexOf("28 "), 27));
             }
         }
 
         [TestMethod]
-        public void RunTrafficEveneningStrategyTest()
+        public void RunTrafficEveningStrategyTest()
         {
             // Arrange
-            DateTime date = new DateTime(2019, 5, 16, 0, 55, 0);
+            DateTime date = new DateTime(2019, 5, 16, 12, 55, 0);
             _street = new Street(5, 0, date);
 
             string expectedOutput1 = "0 RED RED RED RED ORANGE";
@@ -71,12 +71,12 @@ namespace StrategyStateImplTests
                 string actualOutput = stringWriter.ToString();
 
                 // Assert
-                Assert.AreEqual(expectedOutput1, actualOutput.Substring(actualOutput.IndexOf("0 "), actualOutput.IndexOf("0 ") + 24));
-                Assert.AreEqual(expectedOutput2, actualOutput.Substring(actualOutput.IndexOf("2 "), actualOutput.IndexOf("2 ") + 23));
-                Assert.AreEqual(expectedOutput3, actualOutput.Substring(actualOutput.IndexOf("5 "), actualOutput.IndexOf("5 ") + 26));
-                Assert.AreEqual(expectedOutput4, actualOutput.Substring(actualOutput.IndexOf("13 "), actualOutput.IndexOf("13 ") + 29));
-                Assert.AreEqual(expectedOutput5, actualOutput.Substring(actualOutput.IndexOf("14 "), actualOutput.IndexOf("14 ") + 26));
-                Assert.AreEqual(expectedOutput6, actualOutput.Substring(actualOutput.IndexOf("28 "), actualOutput.IndexOf("28 ") + 27));
+                Assert.AreEqual(expectedOutput1, actualOutput.Substring(actualOutput.IndexOf("0 "), 24));
+                Assert.AreEqual(expectedOutput2, actualOutput.Substring(actualOutput.IndexOf("2 "), 23));
+                Assert.AreEqual(expectedOutput3, actualOutput.Substring(actualOutput.IndexOf("5 "), 26));
+                Assert.AreEqual(expectedOutput4, actualOutput.Substring(actualOutput.IndexOf("13 "), 29));
+                Assert.AreEqual(expectedOutput5, actualOutput.Substring(actualOutput.IndexOf("14 "), 26));
+                Assert.AreEqual(expectedOutput6, actualOutput.Substring(actualOutput.IndexOf("28 "), 27));
             }
         }
     }

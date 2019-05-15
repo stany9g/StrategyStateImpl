@@ -18,7 +18,7 @@ namespace StrategyStateImplTests
         public void TestMethod1()
         {
             _street = new Street(5, 0, DateTime.Now);
-            _strategy = new EveningStrategy();
+            _strategy = new EveningStrategy(_street);
         }
 
         [TestMethod]

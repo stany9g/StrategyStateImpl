@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace StrategyStateImpl
@@ -58,6 +59,8 @@ namespace StrategyStateImpl
                 Console.Write($"{time} ");
                 Console.WriteLine(ToString());
             }
+
+            Thread.Sleep(_timeSpeed * 100);
         }
 
         public override string ToString()

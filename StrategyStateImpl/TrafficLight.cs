@@ -24,7 +24,7 @@ namespace StrategyStateImpl
         /// <summary>
         /// Begin a sequence of ORANGE - GREEN - ORANGE - RED
         /// </summary>
-        public void StartGoSequnce()
+        public void StartGoSequence()
         {
             // UNCOMMENT ME WHEN RDY
             //SetState(new AttentionPrepare(this));

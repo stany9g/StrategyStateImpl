@@ -24,7 +24,7 @@ namespace StrategyStateImpl
         /// <summary>
         /// Color of the traffic light for the state
         /// </summary>
-        public Color Color { get; }
+        public Color Color { get; set; }
 
 
         public StateBase(IContext context)
