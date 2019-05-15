@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyStateImpl", "StrategyStateImpl\StrategyStateImpl.csproj", "{9709C70E-000C-479C-A971-39C3ECE8DE4F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyStateImplTests", "StrategyStateImplTests\StrategyStateImplTests.csproj", "{86F9A6C8-5A62-4E15-8CD3-6C332F4570E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9709C70E-000C-479C-A971-39C3ECE8DE4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9709C70E-000C-479C-A971-39C3ECE8DE4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9709C70E-000C-479C-A971-39C3ECE8DE4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86F9A6C8-5A62-4E15-8CD3-6C332F4570E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86F9A6C8-5A62-4E15-8CD3-6C332F4570E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86F9A6C8-5A62-4E15-8CD3-6C332F4570E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86F9A6C8-5A62-4E15-8CD3-6C332F4570E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
