@@ -8,5 +8,6 @@ namespace StrategyStateImpl
 {
     public class Stop
     {
+        //TODO To be implemented
     }
 }

@@ -9,7 +9,7 @@ namespace StrategyStateImpl
     public class TrafficLight : IContext
     {
 
-        public StateBase State { get; set; } //= new Stop(this); UNCOMMENT ME WHEN RDY
+        public StateBase State { get; set; } //= new Stop(this); UNCOMMENT ME WHEN RDY TODO
 
         public void SetState(StateBase state)
         {
@@ -26,7 +26,7 @@ namespace StrategyStateImpl
         /// </summary>
         public void StartGoSequence()
         {
-            // UNCOMMENT ME WHEN RDY
+            //TODO UNCOMMENT ME WHEN RDY
             //SetState(new AttentionPrepare(this));
         }
 

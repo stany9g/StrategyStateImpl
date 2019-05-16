@@ -8,5 +8,6 @@ namespace StrategyStateImpl.State
 {
     public class Attention
     {
+        //TODO To be implemented
     }
 }

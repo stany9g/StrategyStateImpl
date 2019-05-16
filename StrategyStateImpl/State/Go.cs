@@ -8,5 +8,6 @@ namespace StrategyStateImpl
 {
     public class Go
     {
+        //TODO To be implemented
     }
 }
